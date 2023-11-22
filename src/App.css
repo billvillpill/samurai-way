@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+}
+.header img {
+  display: block;
+  width: 100%;
+}
+.logo img {
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 50px;
+  max-width: 230px;
+  object-fit: cover;
+  z-index: 1;
+}
+.mountain img {
+  max-height: 580px;
+  object-fit: cover;
+  z-index: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.grid-container {
+  background-color: #fff;
+  margin: 0 30px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, minmax(300px, auto));
+  grid-template-columns: repeat(3, minmax(300px, auto));
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 1 */
+
+.flexWrapper:first-child {
+  grid-area: 1/1/4/2;
   display: flex;
-  flex-direction: column;
+  max-width: 150px;
+  justify-content: space-around;
+  margin: 20px 0 10px 10px;
+  border: 1px solid #73ff3c
+}
+/* 3 */
+/*.content:nth-child(2) {*/
+/*  grid-area: 1/2/2/5;*/
+/*  border: 1px solid #075b53;*/
+/*}*/
+
+/* 2 */
+.ava:nth-child(2) {
+  grid-area: 1/2/2/3;
+  /*grid-template-rows: minmax(auto, 350px);*/
+  /*justify-items: center;*/
+  /*align-items: center;*/
+  border: 1px solid #1d001f;
+}
+.ava img {
+  max-width: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 3 */
+.description:nth-child(3) {
+  grid-area: 1/3/2/3;
+  /*grid-template-rows: minmax(auto, 350px);*/
+  /*align-items: center;*/
+  border: 1px solid #032524;
+}
+
+/* 4 */
+.myPost:nth-child(4) {
+  grid-area: 2/2/3/4;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid #000e36;
+}
+.myPost p {
+  font-size: calc( (100vw - 360px)/(1920 - 360) * (22px - 12px + 12px));
+  margin: 5px 10px 5px 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* 5 */
+.savePosts:last-child {
+  grid-area: 3/2/4/4;
+  /*grid-auto-rows: minmax(150px, auto);*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /*justify-items: center;*/
+  /*align-items: center;*/
+  border: 1px solid #3b0000;
 }
