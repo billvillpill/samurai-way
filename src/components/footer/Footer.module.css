@@ -1,0 +1,3 @@
+.footer:last-child {
+    grid-area: 6/2/7/5;
+}

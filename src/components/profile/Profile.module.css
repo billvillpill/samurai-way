@@ -1,0 +1,20 @@
+.profileWrapper:nth-child(4) {
+    grid-area: 3/2/4/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.ava{
+    max-width: 160px;
+}
+.ava img {
+    max-width: 160px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #EEDDFF;
+    border-radius: 10px;
+}
+.description {
+
+}

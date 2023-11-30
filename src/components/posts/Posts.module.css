@@ -1,0 +1,27 @@
+/* 4 */
+.posts:nth-child(5) {
+    grid-area: 4/2/6/5;
+    display: inline-block;
+    justify-items: center;
+    align-items: center;
+    /*border: 1px solid #000e36;*/
+}
+.posts h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post {
+    margin: 10px 20px;
+}
+.post p {
+    margin: 10px 0;
+    /*color: white;*/
+    color: black;
+}
+
+/* 5 */
+.savePosts {
+    margin: 10px 20px;
+
+}

@@ -1,0 +1,16 @@
+
+/* 1 */
+.flexWrapper:nth-child(2) {
+    grid-area: 2/1/7/2;
+}
+
+.nav {
+    margin: 20px 40px 20px 5px;
+
+}
+.menu {
+
+}
+.item {
+
+}

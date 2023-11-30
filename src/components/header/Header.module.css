@@ -1,0 +1,39 @@
+.header:first-child {
+    grid-area: 1/1/2/5;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    max-height: 150px;
+    background-color: #F1ECE9FF;
+    /*background-color: rgba(0, 0, 0, 0.91);*/
+}
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 150px;
+    z-index: 3;
+}
+.title h1 {
+    font-family: Shadser, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: calc((100vw - 360px)/(1920 - 360) * (92 - 18) + 18px);
+    /*color: #fff;*/
+    color: black;
+}
+.logo img {
+
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 70px;
+    object-fit: cover;
+    z-index: 2;
+}
+.mountain img {
+    max-height: 150px;
+    border-radius: 10px;
+    z-index: 1;
+}
