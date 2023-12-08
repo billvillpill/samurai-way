@@ -1,9 +1,13 @@
-.profileWrapper:nth-child(4) {
-    grid-area: 3/2/4/5;
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+}
+.profile {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    gap: 25px;
 }
 .ava{
     max-width: 160px;

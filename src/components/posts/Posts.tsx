@@ -4,7 +4,7 @@ import {Post} from './post/Post';
 
 export const Posts = () => {
     return (
-        <div className={s.posts}> {/* 5 */}
+        <div className={s.posts}>
             <h2>My post</h2>
             <div>
                 <textarea></textarea>

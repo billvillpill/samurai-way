@@ -4,7 +4,7 @@ import mountain from '../../asset/images/mountainLandscape.webp';
 
 export const Content = () => {
     return (
-        <div className={s.content}> {/* 3 */}
+        <div className={s.content}>
             <img src={mountain} alt={''}/>
         </div>
     );
