@@ -7,10 +7,12 @@ export const Posts = () => {
         <div className={s.posts}>
             <h2>My post</h2>
             <div>
-                <textarea></textarea>
-                <button>Add post</button>
+                <div className={s.block}>
+                    <textarea className={s.textarea}></textarea>
+                    <button className={s.submitTextArea}>Add post</button>
+                </div>
             </div>
-            <div className={s.savePosts}>
+            <div className={s.postsBlock}>
                 <Post />
             </div>
         </div>

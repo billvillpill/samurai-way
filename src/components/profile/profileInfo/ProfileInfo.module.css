@@ -1,0 +1,19 @@
+.profileInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+.ava{
+    max-width: 160px;
+}
+.ava img {
+    max-width: 160px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #EEDDFF;
+    border-radius: 10px;
+}
+.description {
+
+}

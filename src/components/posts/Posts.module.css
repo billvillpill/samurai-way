@@ -1,27 +1,39 @@
-/* 4 */
-/*.posts:nth-child(5) {*/
-/*    grid-area: 4/2/6/5;*/
-/*    display: inline-block;*/
-/*    justify-items: center;*/
-/*    align-items: center;*/
-/*    !*border: 1px solid #000e36;*!*/
-/*}*/
-.posts h2 {
+
+.posts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px 20px;
+}
+.block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 25px;
+    max-width: 600px;
+}
+.textarea {
+
+}
+.submitTextArea {
+    max-width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 .post {
     margin: 10px 20px;
 }
 .post p {
     margin: 10px 0;
-    /*color: white;*/
     color: black;
 }
 
 /* 5 */
-.savePosts {
+.postsBlock {
     margin: 10px 20px;
 
 }
