@@ -1,0 +1,34 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+}
+.dialogs {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.dialogsItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.dialogsItems .active {
+    color: #4900ff;
+    font-weight: bold;
+}
+.dialog {
+
+}
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.message {
+
+}
