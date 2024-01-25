@@ -1,34 +1,26 @@
 import React from 'react';
 import s from './Navbar.module.css';
+import {NavLink} from 'react-router-dom';
 
-type NavbarPropsType = {
-    setSwitchPages: (state: boolean) => void
-}
-export const Navbar = (props: NavbarPropsType) => {
-    const onClikSwitchOnProfile = () => {
-        props.setSwitchPages(true)
-    }
-    const onClikSwitchOnMessage = () => {
-        props.setSwitchPages(false)
-    }
+export const Navbar = () => {
     return (
         <div className={s.flexWrapper}> {/* 2 menu*/}
             <nav className={s.nav}>
                 <ul className={s.menu}>
                     <li className={s.item}>
-                        <a href={'#1'} onClick={onClikSwitchOnProfile}>Profile</a>
+                        <NavLink to={'/profile'} activeClassName={s.activeLink}>Profile</NavLink>
                     </li>
                     <li className={s.item}>
-                        <a href={'#1'} onClick={onClikSwitchOnMessage}>Message</a>
+                        <NavLink to={'/dialogs'} activeClassName={s.activeLink}>Message</NavLink>
                     </li>
                     <li className={s.item}>
-                        <a href={'#1'}>News</a>
+                        <NavLink to={'/news'} activeClassName={s.activeLink}>News</NavLink>
                     </li>
                     <li className={s.item}>
-                        <a href={'#1'}>Music</a>
+                        <NavLink to={'/music'} activeClassName={s.activeLink}>Music</NavLink>
                     </li>
                     <li className={s.item}>
-                        <a href={'#1'}>Settings</a>
+                        <NavLink to={'/settings'} activeClassName={s.activeLink}>Settings</NavLink>
                     </li>
                 </ul>
             </nav>

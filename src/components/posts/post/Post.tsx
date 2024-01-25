@@ -1,14 +1,28 @@
 import React from 'react';
-import s from '../Posts.module.css'
+import s from '../Posts.module.css';
 
-export const Post = () => {
+type PostProps = {
+    likesCount: number
+    message: string
+}
+
+export const Post = (props: PostProps) => {
     return (
         <div className={s.post}>
+            <div><p>{props.message}</p></div>
+            <div><span>{props.likesCount}</span></div>
+        </div>
+    );
+};
+
+
+
+/*
             <p>
                 Привет! Меня зовут Мария, и я - байкер. Но не просто байкер, а байкер с большой буквы. Я обожаю
                 скорость, ветер, свободу. Мне нравится чувствовать, как мой мотоцикл несет меня по дороге, как я
                 сливаюсь с ним в одно целое.
-            </p>
+           </p>
             <p>
                 Моя страсть к мотоциклам началась еще в детстве, когда я впервые увидела своего отца за рулем его
                 железного коня. Он был настоящим байкером, и я всегда хотела быть похожей на него.
@@ -26,7 +40,5 @@ export const Post = () => {
             <p>
                 Жизнь байкера - это не только скорость и адреналин, но и множество приключений и интересных знакомств.
             </p>
-        </div>
-    );
-};
 
+* */
